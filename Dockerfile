@@ -31,4 +31,4 @@ RUN apk --no-cache --virtual build-dependendencies add \
 USER dockeruser
 EXPOSE 8332
 
-CMD bitcoind -conf=/opt/graphsense/paicoin.conf -datadir=/opt/graphsense/data -daemon -rest && bash
+CMD paicoind -conf=/opt/graphsense/paicoin.conf -datadir=/opt/graphsense/data -daemon -rest && bash
