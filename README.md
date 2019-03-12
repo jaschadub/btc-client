@@ -17,8 +17,8 @@ Ensure that a user `dockeruser` with ID `10000` exists on your local system.
 
 ## Configuration
 
-Modify `docker/PAIcoin.conf` according to your environment
-(see [doc][PAIcoin-conf]).
+Modify `docker/paicoin.conf` according to your environment
+(see [doc][paicoin-conf]).
 
 Configure `rpcallowip=...` to allow the client/daemon to accept
 RPC connections outside the localhost and set an RPC username (`rpcuser`)
@@ -48,4 +48,4 @@ Showing the PAIcoin log file:
 
 
 [docker]: https://www.docker.com/
-[PAIcoin-conf]: https://en.PAIcoin.it/wiki/Running_PAIcoin#PAIcoin.conf_Configuration_File
+[paicoin-conf]: https://github.com/projectpai/paicoin/blob/master/doc/build-unix.md
