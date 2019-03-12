@@ -1,6 +1,7 @@
-# Bitcoin Docker container
 
-A Docker container running Bitcoin as a service and exposing the REST API.
+# PAIcoin Docker container
+
+A Docker container running PAIcoin as a service and exposing the REST API.
 
 ## Prerequisites
 
@@ -16,8 +17,8 @@ Ensure that a user `dockeruser` with ID `10000` exists on your local system.
 
 ## Configuration
 
-Modify `docker/bitcoin.conf` according to your environment
-(see [doc][bitcoin-conf]).
+Modify `docker/PAIcoin.conf` according to your environment
+(see [doc][PAIcoin-conf]).
 
 Configure `rpcallowip=...` to allow the client/daemon to accept
 RPC connections outside the localhost and set an RPC username (`rpcuser`)
@@ -29,7 +30,7 @@ Make sure your config file includes the following line:
 
 ## Usage
 
-Building the docker container (tagged GitHub version of Bitcoin in `docker/Makefile`):
+Building the docker container (tagged GitHub version of PAIcoin in `docker/Makefile`):
 
     ./docker/build.sh
 
@@ -41,11 +42,10 @@ Attaching to the container:
 
     ./docker/attach.sh
 
-Showing the Bitcoin log file:
+Showing the PAIcoin log file:
 
     ./docker/show_log.sh
 
 
 [docker]: https://www.docker.com/
-[bitcoin-conf]: https://en.bitcoin.it/wiki/Running_Bitcoin#Bitcoin.conf_Configuration_File
-[homebrew]: https://brew.sh/
+[PAIcoin-conf]: https://en.PAIcoin.it/wiki/Running_PAIcoin#PAIcoin.conf_Configuration_File
