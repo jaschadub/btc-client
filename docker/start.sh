@@ -5,13 +5,13 @@ if ! [ -n "$1" ] ; then
     exit 1
 fi
 
-docker stop bitcoin
-docker rm bitcoin
+docker stop paicoin
+docker rm paicoin
 
 chown -R dockeruser "$1"
 
-docker run --restart=always -d --name bitcoin \
+docker run --restart=always -d --name paicoin \
     -p 8332:8332 \
     -v "$1":/opt/graphsense/data \
-    -it bitcoin
+    -it paicoin
 docker ps -a

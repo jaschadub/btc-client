@@ -1,5 +1,5 @@
 install:
-	git clone https://github.com/bitcoin/bitcoin.git src && \
+	git clone https://github.com/paicoin/paicoin.git src && \
 	cd src && \
 	git checkout tags/v0.17.1 -b local && \
 	./autogen.sh && \

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t bitcoin .
+docker build -t paicoin .
